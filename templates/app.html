@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SemComp</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <p class='title'>SemComp</p>
+<form method="post">
+  
+    <div class='pair'>
+      <label for='main_phrase'>Main Phrase:</label>
+      <input name='main_phrase' id='main_phrase' placeholder="ex. best color">
+
+    <span class='lol'></span>
+      <label for='other_phrases'>Phrases to Compare:</label>
+      <input name='other_phrases' id='other_phrases' placeholder="ex. red,blue">
+
+    </div>
+  <button type='submit'>Compare</button>
+      
+</form>
+  <p class='results'>Closest Match: <strong>{{word}}</strong> with a similarity of <strong>{{sim}}%</strong></p>
+
+<style type='text/css'>
+  html{
+    background: rgb(174,218,238);
+background: radial-gradient(circle, rgba(174,218,238,1) 0%, rgba(148,175,233,1) 100%);
+  }
+  button{font-family:monospace;
+    font-size:200%;
+    margin-left:43%;
+        margin-top:5%;}
+  .lol{
+    margin-right: 10%;
+    
+  }
+  .results{
+    font-family:monospace;
+    font-size:200%;
+    margin-left:20%;
+    margin-top:5%;
+  }
+  .pair{
+    margin-left:10%;
+  }
+ .title{
+    font-family:monospace;
+    font-size:500%;
+    margin-left:39%;
+    
+  }
+  input{
+    font-family:monospace;
+    font-size: 200%;
+    width:20%
+  
+    
+  }
+  label{
+    font-family:monospace;
+    font-size: 200%;
+    
+  }
+  ::placeholder{
+    font-family:monospace;
+  }
+  .pair2{
+    width:10%;
+    margin-left:6%;
+    display: inline-block;
+  }
+  
+  .main_div{
+    display: inline-block;
+    width:100%
+  }
+</style>
+  
+</body>
+
+</html>
